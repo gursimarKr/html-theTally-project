@@ -1225,18 +1225,31 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 	border-radius: 35px;
 }
 .contactus-background .img-box{
-	width: 36%;
+	width: 43%;
     position: absolute;
     right: -7%;
-    top: 127px;
+    top: 140px;
+}
+.contactus-content{
+	padding: 6% 0;
 }
 .contactus-content p{
 	width: 35%;
 }
+.contactus-background .right-polygon{
+	position: absolute;
+    width: 19%;
+    right: -29px;
+    /* top: 30px; */
+    bottom: -18%;
+}
 .form-content{
 	/* width: 51%; */
 }
-.btn-send-message{
+.form-content label{
+	margin: 4px 0;
+}
+.form-content .btn-send-message, .login-form .btn-login{
 	background-color: #26AEAC;
 	width: 100%;
 	margin: 3% 0;
@@ -1252,7 +1265,7 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 .form-content label{
 	font-weight: 500;
 }
-.form-content .form-group .form-control{
+.form-content .form-group .form-control, .login-form .form-group .form-control{
 	background-color: #F1F1F1;
 	border-radius: 8px;
     border-width: 0;
