@@ -979,7 +979,9 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 .blog-unit-content p{
 	color: #000;
 }
-
+.blog-links a{
+	color: #fff;
+}
 /* blog details page */
 .details-image{
 	width: 100%;
@@ -1088,7 +1090,8 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 .unit-background .blog-links{
 	position: absolute;
     /* top: -1px; */
-    margin-top: -2%;
+    /* margin-top: -2%; */
+	bottom: 1%;
     color: #fff;
     font-size: 18px;
     margin-left: 21px;
@@ -1104,14 +1107,16 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
     font-weight: 500;
     font-style: italic;
 }
-
+.greyer-text{
+	color: #585858;
+}
 /* about us page */
 .about-us-heading{
 	width: 100%;
     margin: 0 auto;
     color: #fff;
     text-align: center;
-    padding: 3% 0;
+    padding: 4% 0;
 }
 .about-us-text .grey-bg{
 	background-color: #E8E8E8;
@@ -1133,8 +1138,9 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 	float: left;
 }
 .get-data .img-circle{
-	width: 383px;
-    height: 368px;
+	margin: 4% 0;
+	width: 400px;
+    height: 400px;
 }
 .get-data{
 	
@@ -1155,7 +1161,7 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 
 }
 .get-data .get-data-text h3{
-	font-size: 27px;
+	font-size: 32px;
 	margin: 4% 0;
 }
 .tally-team .tally-team-heading{
@@ -1164,7 +1170,7 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 	margin-top: 0 auto;
 }
 .tally-team .tally-team-heading h3{
-	font-size: 27px;
+	font-size: 32px;
 }
 .tally-team .tally-team-heading p{
 	width: 70%;
@@ -1188,7 +1194,7 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 	font-size: 15px;
 }
 .team-content .team-content-text p{
-	padding: 6% 0;
+	padding: 12% 0;
 	width: 85%;
 
 }
@@ -1219,12 +1225,12 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 	border-radius: 35px;
 }
 .contactus-background .img-box{
-	width: 40%;
+	width: 36%;
     position: absolute;
-    right: -13%;
-    top: 93px;
+    right: -7%;
+    top: 127px;
 }
-contactus-content p{
+.contactus-content p{
 	width: 35%;
 }
 .form-content{
