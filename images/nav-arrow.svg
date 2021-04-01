@@ -1,0 +1,15 @@
+<svg id="nav-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Background" width="16" height="16" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="Background-2" data-name="Background" width="16" height="16" fill="none"/>
+  <g id="down-arrow_1_" data-name="down-arrow (1)" clip-path="url(#clip-path)">
+    <g id="Group" transform="translate(0 3.057)">
+      <g id="Group-2" data-name="Group">
+        <path id="Polygon" d="M14.113,0,8,6.113,1.887,0,0,1.887l8,8,8-8Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
