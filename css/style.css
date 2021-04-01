@@ -1249,7 +1249,12 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 .form-content label{
 	margin: 4px 0;
 }
-.form-content .btn-send-message, .login-form .btn-login{
+.login-form label{
+	margin: 0;
+	font-weight: 500;
+	font-size: 18px;
+}
+.form-content .btn-send-message{
 	background-color: #26AEAC;
 	width: 100%;
 	margin: 3% 0;
@@ -1265,14 +1270,21 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 .form-content label{
 	font-weight: 500;
 }
-.form-content .form-group .form-control, .login-form .form-group .form-control{
+.form-content .form-group .form-control{
 	background-color: #F1F1F1;
 	border-radius: 8px;
     border-width: 0;
 	/* padding: 3% 5px; */
     font-size: 18px;
 }
-.form-content .icon-right{
+.login-form .form-group .form-control{
+	background-color: #F1F1F1;
+    border-radius: 8px;
+    border-width: 0;
+    padding: 2% 1%;
+    font-size: 18px;
+}
+.form-content .icon-right, .login-form .icon-right{
 	margin: 0px 1%;
     font-size: 12px;
     padding: 1px 11px;
@@ -1290,4 +1302,57 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 .form-content .grey-bar{
 	border-bottom: 1px solid #C9C9C9;
 	padding: 1% 0;
+}
+.login-background{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 4% 0;
+	color: #fff;
+}
+.login-form .btn-login{
+	background-color: #26AEAC;
+	width: 100%;
+	margin: 3% 0;
+	border-radius: 33px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 3% 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.login-form .form-group{
+	margin: 2% 0;
+}
+.login-form{
+width: 50%;
+margin: 0 auto;
+}
+.form-check-input:checked{
+	background-color: #34AED5;
+}
+.login-form a{
+	color: #34AED5;
+	text-decoration: underline !important;
+	font-weight: 500;
+	font-size: 18px;
+}
+.login-heading-content p{
+	width: 75%;
+	color:#fff;
+	margin: 0 auto;
+}
+.login-form .form-group{
+	margin: 14px 0;
+}
+.login-form .custom-check-login{
+	margin: 4% 0;
+}
+.form-check .form-check-input{
+	width: 19px;
+	height: 19px;
+	margin-right: 19px;
 }
