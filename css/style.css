@@ -1506,3 +1506,34 @@ margin: 0 auto;
 .my-interest h2{
 	text-transform: uppercase;
 }
+.border-plan{
+	border: 1px solid black;
+	display: inline-block;
+    padding: 8px 20px;
+	border-radius: 5px;
+	color: #000;
+}
+.fill-background{
+	background-color: #34AED5;
+	color: #fff;
+	border-radius: 30px;
+    padding: 12px 43px;
+}
+.update-profile-links a{
+	font-size: 18px;
+}
+.update-profile-links .fill-background:hover{
+	color: #fff	!important;
+}
+.update-profile-links .fill-border{
+	border-radius: 30px;
+	color: #34AED5;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #34AED5;
+    padding: 12px 43px;
+
+}
+.fill-border:hover{
+	color: #34AED5 !important;
+}
