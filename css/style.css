@@ -941,9 +941,13 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 }
 .filter-by-categories .dropdown{
 	display: inline-block;
+	margin: 0 7px;
+}
+.margin-by{
+	margin: 0 9px;
 }
 .blog-paragraph{
-	width: 44%;
+	width: 38%;
     margin: 0 auto;
 	font-size: 15px;
 }
@@ -974,10 +978,41 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 	padding: 2% 0;
 }
 .blog-unit-content h4{
-	font-size: 25px;
+	font-size: 27px;
 }
 .blog-unit-content p{
 	color: #000;
+	padding: 12px 0;
+}
+.blog-unit-content{
+	padding: 23px 20px;
+}
+.blog-arrows-width{
+	width: 16px;
+	margin-right: 1px;
+}
+.card-container .load-more-right-icon{
+	width: 20px;
+	margin-left: 26px;
+
+}
+.card-container .btn-load-more{
+	border: 1px solid #707070;
+    border-radius: 25px;
+	font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 32px;
+}
+.grey-lined{
+	border-top: 2px solid #D8D8D8;
+}
+.unit-blog-arrows-width{
+	width: 14px;
+	margin-right: 1px;
 }
 .blog-links a{
 	color: #fff;
@@ -1091,12 +1126,15 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 	position: absolute;
     /* top: -1px; */
     /* margin-top: -2%; */
-	bottom: 1%;
+	bottom: -89px;
     color: #fff;
     font-size: 18px;
     margin-left: 21px;
     font-weight: 400;
     font-style: italic;
+}
+.italic-text{
+	font-style: italic !important;
 }
 .card .blog-links{
 	position: absolute;
@@ -1406,7 +1444,7 @@ margin: 0 auto;
 
 }
 .sign-up-with .sign-up-with-icons{
-	width: 11%;
+	width: 28px;
 }
 .sign-up-with{
 	/* margin: 0 auto;
@@ -1490,6 +1528,10 @@ margin: 0 auto;
 	color:#26AEAC ;
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
+	font-weight: 500;
+}
+.btn-submit:hover{
+	color: #fff;
 }
 .profile-heading{
 	margin: 0 auto;
@@ -1536,4 +1578,11 @@ margin: 0 auto;
 }
 .fill-border:hover{
 	color: #34AED5 !important;
+}
+.password-style{
+	padding: 4% 1%;
+	background-color: #F1F1F1;
+	/* padding: 2% 1%; */
+	color: #828282;
+	font-size: 18px;
 }
