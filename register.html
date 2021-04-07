@@ -31,11 +31,11 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="image" /></a>
+        <a class="navbar-brand" href="index.html"><img src="images/logo-black.png" alt="image" /></a>
 
         <div class="header-control d-flex align-items-center order-2">
-          <a href="#">Login</a>
-          <a href="#">Register</a>
+          <a href="./login.html">Login</a>
+          <a href="./register.html">Register</a>
 
           <div class="dropdown dropdown-location">
             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -80,7 +80,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">BLOG</a>
+              <a class="nav-link" href="./blog.html">BLOG</a>
             </li>
           </ul>
         </div>
@@ -131,36 +131,40 @@
                     <!-- name -->
                     <div class="row">
                         <div class="form-group">
-                            <label for="full-name-register">Full Name</label>
+                            <label class="required-field" for="full-name-register">Full Name</label>
                             <input type="text" class="form-control form-control-style" id="full-name-register" placeholder="   ">
                         </div>
                     </div>
                     <!-- email -->
                     <div class="row">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
+                            <label class="required-field" for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control form-control-style" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" ">
                           </div>
                     </div>
                    
                   <div class="row">
                     <div class="col-sm-6 form-group">
-                        <label for="exampleInputPassword1">Password</label>
+                        <label class="required-field" for="exampleInputPassword1">Password</label>
                         <input type="password" class="form-control password-style" id="exampleInputPassword1" placeholder="">
                       </div>
                       <div class="col-sm-6 form-group">
-                        <label for="exampleInputPassword2">Confirm Password</label>
+                        <label class="required-field" for="exampleInputPassword2">Confirm Password</label>
                         <input type="password" class="form-control password-style" id="exampleInputPassword2" placeholder="">
                       </div>
                   </div>
                     <div class="form-group form-check">
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Agree to our Terms, Privacy Policy, and End user licence
-                        agreement</label>
+                      <label class="form-check-label" for="exampleCheck1">Agree to our 
+                        <a class="hyper-links-register" href="#">Terms</a>, 
+                        <a class="hyper-links-register" href="#">Privacy Policy</a>,
+                         and <a class="hyper-links-register" href="#">End user licence agreement</a>
+                        </label>
                     </div>
                     <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">I agree to receiving communications</label>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                        <label class="form-check-label" for="exampleCheck2">I agree to 
+                          receiving communications</label>
                       </div>
                     <button type="submit" class="btn btn-submit">Submit <i class="fas fa-chevron-right icon-right"></i></button>
                   </form>
@@ -170,9 +174,9 @@
 
 
      </div>
-     <hr/>
+     <hr class="hr-grey-line"/>
      <div class="already-a-member">
-         <p>Already a member <a href="#">Sign In</a> Here</p>
+         <p>Already a member <a href="./login.html">Sign In</a> Here</p>
      </div>
      <div class="section-search position-relative mt-2" id="search">
         <img src="images/shape-rect.svg" class="shape-bottom-left" alt="shape" />
@@ -203,7 +207,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <img src="images/logo.svg" class="footer-logo" alt="logo" />
+          <img src="images/logo-black.png" class="footer-logo" alt="logo" />
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
 
           <div class="social-icons d-flex align-items-center">
@@ -229,8 +233,8 @@
             <li><a href="./about-us.html">About Us</a></li>
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./contact-us.html">Contact Us</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./register.html">Register</a></li>
           </ul>
         </div>
         <div class="col-md-3">
