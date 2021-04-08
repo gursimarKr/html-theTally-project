@@ -34,8 +34,16 @@
         <a class="navbar-brand" href="index.html"><img src="images/logo-black.png" alt="image" /></a>
 
         <div class="header-control d-flex align-items-center order-2">
-          <a href="./login.html">Login</a>
-          <a href="./register.html">Register</a>
+          <div class="dropdown">
+            <button class="btn profile-uppercase dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              My Profile
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="./my-profile.html">My Profile</a></li>
+              <li><a class="dropdown-item" href="./my-profile-settings.html">Profile Settings</a></li>
+              <li><a class="dropdown-item" href="./index.html">Logout</a></li>
+            </ul>
+          </div>
 
           <div class="dropdown dropdown-location">
             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -112,8 +120,8 @@
                 <p class="border-plan mx-2">Primary School</p>
             </div>
             <div class="update-profile-links my-4">
-                <a href="#" class="fill-background "><i class="fas fa-user mr-2"></i> Update My Profile</a>
-                <a href="#" class="mx-2 fill-border">Update My Profile Settings</a>
+                <a href="./profile-interest.html" class="fill-background "><i class="fas fa-user mr-2"></i> Update My Profile</a>
+                <a href="./my-profile-settings.html" class="mx-2 fill-border">Update My Profile Settings</a>
             </div>
             </div>
         </div>

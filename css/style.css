@@ -183,7 +183,13 @@ a.color-grad:hover, .slide-card:hover .color-grad{
 	-o-transform: rotate(180deg);
 	transform: rotate(180deg);
 }
-
+/* my profile uppercase text */
+.profile-uppercase{
+	font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+/* ---- */
 .dropdown-toggle::after{
 	background: transparent url('../images/nav-arrow.svg') no-repeat center / contain;
 	vertical-align: -1px;
@@ -887,6 +893,9 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 .text-align-right{
 	text-align: right;
 }
+.text-align-left{
+	text-align: left;
+}
 .search-unit{
     margin: 2% 3%;
 	border: 1px solid #D8D8D8;
@@ -1423,6 +1432,13 @@ margin: 0 auto;
     bottom: 32%;
     width: 23%;
 }
+/* profile setting polygon */
+.profile-setting-polygon{
+	position: absolute;
+    right: -132px;
+    bottom: 122px;
+    width: 253px;
+}
 .login-left-poly{
 	position: absolute;
     left: -84px;
@@ -1457,6 +1473,10 @@ margin: 0 auto;
 }
 .bold-text{
 	font-weight: 400;
+}
+.bolder-text{
+	font-weight: 500;
+	font-size: 18px;
 }
 .sign-up-with .grey-background{
 	background-color: #F1F1F1;
@@ -1502,7 +1522,8 @@ margin: 0 auto;
 	color: white;
 	text-transform: uppercase;
 	font-weight: 500;
-	padding: 2% 0;
+	padding: 3% 0;
+    font-size: 18px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1519,10 +1540,13 @@ margin: 0 auto;
 	padding: 2% 1%;
 	color: #828282;
 	font-size: 18px;
+	border: 0;
 }
 .register-form-box label{
 	font-size: 18px;
 	font-weight: 500;
+	margin: 3px 0;
+
 }
 .register-form-box .form-check .form-check-input{
 	width: 24px;
@@ -1539,7 +1563,12 @@ margin: 0 auto;
     bottom: -39%;
     width: 15%;
 }
-
+.profile-settings-polygon{
+	position: absolute;
+    left: -77px;
+    bottom: -141px;
+    width: 186px;
+}
 .already-a-member p{
 	color: #000;
 	text-align: center;
@@ -1603,10 +1632,11 @@ margin: 0 auto;
 }
 .password-style{
 	padding: 4% 1%;
-	background-color: #F1F1F1;
+	background-color: #F1F1F1 !important;
 	/* padding: 2% 1%; */
 	color: #828282;
 	font-size: 18px;
+	border: 0
 }
 .hr-grey-line{
 	border: 1px solid #707070;
@@ -1691,4 +1721,87 @@ margin: 0 auto;
 }
 .shift-to-top{
 	margin: -7px 0;
+}
+
+/* profile interest */
+.tell-us-about-you  .about-user-info{
+	width: 55%;
+	margin: 0 auto;
+}
+.tell-us-about-you .about-heading{
+	margin: 45px 0;
+	
+
+}
+.tell-us-about-you .about-heading h3{
+	font-size: 26px;
+}
+.about-user-info .find-due-date{
+	border: 1px solid #C5C5C5;
+	text-align: left;
+    padding: 23px 22px;
+
+}
+.find-due-date .find-month{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 71%;
+}
+.find-due-date .find-month .dropdown{
+	display: inline-block;
+	text-transform: uppercase;
+	background-color: #F2F2F2 !important;
+	color: #828282 !important;
+	padding: 12px 16px;
+}
+.find-month .btn-find-month{
+	background-color: #F2F2F2 !important;
+	color: #828282 !important;
+	width: 176px !important;
+
+}
+.about-user-info .col-sm-6{
+	display: flex;
+	align-items: start;
+}
+
+.add-child{
+	border-bottom: 1px solid #C5C5C5;
+	padding-bottom: 3px;
+    margin-bottom: 13px;
+    font-size: 18px;
+}
+
+/* --- */
+.find-due-child .find-child{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 71%;
+}
+.find-due-child .find-child .dropdown{
+	display: inline-block;
+	text-transform: uppercase;
+	background-color: #F2F2F2 !important;
+	color: #828282 !important;
+	padding: 12px 16px;
+}
+.find-child .btn-find-month{
+	background-color: #F2F2F2 !important;
+	color: #828282 !important;
+	width: 176px !important;
+
+}
+.find-due-child{
+	border: 1px solid #C5C5C5;
+	text-align: left;
+    padding: 23px 22px;
+
+}
+.btn-another-child{
+	border-radius: 20px;
+	padding: 13px 17px;
+	border: 1px solid #34AED5;
+	color: #34AED5;
 }
