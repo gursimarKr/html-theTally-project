@@ -117,13 +117,14 @@
                 <div class="about-heading">
                 <h3 class="greyer-text my-3">Tell Us a bit More About you</h3>
                 </div>
+              </div>
                 <form action="/">
                   <div class="about-user-info">
-                    <div class="row">
+                    <div class="row justify-content-start">
                       <div class="col-sm-6">
-                        <p class="my-2 required-field bolder-text text-align-left black-text">Are you pregnant?</p>
-                    </div>
-                    <div class="col-sm-6">
+                        <p class="my-2 required-field bolder-text black-text">Are you pregnant?</p>
+                      </div>
+                      <div class="col-sm-6">
                         <!-- inline radio -->
                        <div class="my-2">
                         <div class="form-check form-check-inline">
@@ -135,8 +136,8 @@
                           <label class="form-check-label bolder-text" for="inlineRadio2">No</label>
                         </div>
                        </div>
-                    </div>
-                       <div class="find-due-date my-4">
+                        </div>
+                       <!-- <div class="find-due-date my-4">
                          <h3>What is your due date?</h3>
                          <div class="find-month">
                             <div class="month-label">
@@ -160,8 +161,35 @@
                             </div>
                             
                          </div>
+                       </div> -->
+                       <div class="due-date-row find-due-date">
+                         <h4>what is your due date?</h4>
+                         <div class="row justify-content-start text-left">
+                           <div class="col-md-4 col-sm-6">
+                            <div class="month-label">
+                              <label class="m-label" for="months">Select Month</label> <br>
+                              <select class="dropdown" name="month" id="months">
+                                <option value="">xxx</option>
+                                <option value="">January</option>
+                                <option value="">February</option>
+                                <option value="">March</option>
+                              </select>
+                            </div>
+                           </div>
+                           <div class="col-md-4 col-sm-6">
+                            <div class="year-label">
+                              <label class="m-label" for="months">Select Year</label> <br>
+                              <select class="dropdown" name="month" id="months">
+                                <option value="">2000</option>
+                                <option value="">2001</option>
+                                <option value="">2002</option>
+                                <option value="">2003</option>
+                              </select>
+                            </div>
+                           </div>
+                         </div>
                        </div>
-                    </div>
+                      </div>
                     <div class="row">
                         <div class="col-sm-6">
                           <div class="my-3">
@@ -184,74 +212,106 @@
                         </div>
                     </div>
                     <div class="row">
-                      <div class="col-sm-6">
-                        <p class="required-field bolder-text text-align-left black-text">Do you have kids?</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <!-- inline radio -->
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label bolder-text" for="inlineRadio1">Yes</label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label bolder-text" for="inlineRadio2">No</label>
-                          </div>
-                    </div>
-                       <div class="my-4 find-due-child">
-                         <div class="add-child">
-                           <span>CHILD 1</span>
-                         </div>
-                         <h3>What is their date of birth?</h3>
-                         <div class="all-child-labels d-flex align-items-center justify-content-between">
-                            <label class="m-label" for="months">Select Month</label>
-                            <label class="m-label" for="months">Select Year</label>
-                           
-                         </div>
-                         <div class="find-child">
-                          <div class="month-label">
-                            <select class="dropdown" name="month" id="months">
-                              <option value="">xxx</option>
-                              <option value="">January</option>
-                              <option value="">February</option>
-                              <option value="">March</option>
-                            </select>
-                          </div>
-
-                          <div class="year-label">
-                            <select class="dropdown" name="month" id="months">
-                              <option value="">2000</option>
-                              <option value="">2001</option>
-                              <option value="">2002</option>
-                              <option value="">2003</option>
-                            </select>
-                          </div>
-                          
-                         <button class="btn btn-another-child">Add Another Child</button>
-                            
-                            
-                         </div>
-                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-5">
-                        <div class="my-3">
-                          <p class=" required-field text-align-left bolder-text black-text">What's your postcode?</p>
-
+                          <div class="col-sm-6">
+                            <p class="required-field bolder-text text-align-left black-text">Do you have kids?</p>
                         </div>
-                      </div>
-                      <div class="col-sm-7">
-                          <div class="form-group">
-                            <input type="text" class="my-2 form-control postcode-style" placeholder=""/>
+                        <div class="col-sm-6">
+                            <!-- inline radio -->
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label bolder-text" for="inlineRadio1">Yes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label bolder-text" for="inlineRadio2">No</label>
+                              </div>
+                        </div>
+                          <!-- <div class="my-4 find-due-child">
+                            <div class="add-child">
+                              <span>CHILD 1</span>
+                            </div>
+                            <h3>What is their date of birth?</h3>
+                            <div class="all-child-labels d-flex align-items-center justify-content-between">
+                                <label class="m-label" for="months">Select Month</label>
+                                <label class="m-label" for="months">Select Year</label>
+                              
+                            </div>
+                            <div class="find-child">
+                              <div class="month-label">
+                                <select class="dropdown" name="month" id="months">
+                                  <option value="">xxx</option>
+                                  <option value="">January</option>
+                                  <option value="">February</option>
+                                  <option value="">March</option>
+                                </select>
+                              </div>
+
+                              <div class="year-label">
+                                <select class="dropdown" name="month" id="months">
+                                  <option value="">2000</option>
+                                  <option value="">2001</option>
+                                  <option value="">2002</option>
+                                  <option value="">2003</option>
+                                </select>
+                              </div>
+                              
+                            <button class="btn btn-another-child">Add Another Child</button>
+                                
+                                
+                            </div>
+                          </div>
+                        </div> -->
+                        <div class="find-due-child">
+                          <div class="add-child">
+                            <span>CHILD 1</span>
+                          </div>
+                          <div class="find-child">
+                            <h4>What is their date of birth?</h4>
+                            <div class="row justify-content-start text-left">
+                              <div class="col-md-4 col-sm-6">
+                               <div class="month-label">
+                                 <label class="m-label" for="months">Select Month</label> <br>
+                                 <select class="dropdown" name="month" id="months">
+                                   <option value="">xxx</option>
+                                   <option value="">January</option>
+                                   <option value="">February</option>
+                                   <option value="">March</option>
+                                 </select>
+                               </div>
+                              </div>
+                              <div class="col-md-4 col-sm-6">
+                               <div class="year-label">
+                                 <label class="m-label" for="months">Select Year</label> <br>
+                                 <select class="dropdown" name="month" id="months">
+                                   <option value="">2000</option>
+                                   <option value="">2001</option>
+                                   <option value="">2002</option>
+                                   <option value="">2003</option>
+                                 </select>
+                               </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>     
+                        <div class="row">
+                          <div class="col-sm-5">
+                            <div class="my-3">
+                              <p class=" required-field text-align-left bolder-text black-text">What's your postcode?</p>
+
+                            </div>
+                          </div>
+                          <div class="col-sm-7">
+                              <div class="form-group">
+                                <input type="text" class="my-2 form-control postcode-style" placeholder=""/>
+                              </div>
                           </div>
                       </div>
-                  </div>
-                   <button class="btn btn-update">UPDATE <i class="fas fa-chevron-right icon-right"></i></button>
+                      <button class="btn btn-update">UPDATE <i class="fas fa-chevron-right icon-right"></i></button>
                   
-                </div>
+                    </div>
                 </form>
 
-              </div>
           </div>
       </div>
     </div>

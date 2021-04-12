@@ -1767,6 +1767,17 @@ margin: 0 auto;
     border-radius: 4px;
 
 }
+.due-date-row .dropdown{
+	display: inline-block;
+	text-transform: uppercase;
+	background-color: #F2F2F2 !important;
+	color: #828282 !important;
+	padding: 12px 16px;
+	width: 205px;
+	font-size: 18px;
+    border: 0;
+    border-radius: 4px;
+}
 .find-month .btn-find-month{
 	background-color: #F2F2F2 !important;
 	color: #828282 !important;
@@ -1787,12 +1798,12 @@ margin: 0 auto;
 
 /* --- */
 .find-due-child .find-child{
-	display: flex;
+	/* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
     /* width: 71%; */
 }
-.find-due-child .find-child .dropdown{
+.find-due-child .dropdown{
 	display: inline-block;
 	text-transform: uppercase;
 	background-color: #F2F2F2 !important;
