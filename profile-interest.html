@@ -117,27 +117,30 @@
                 <div class="about-heading">
                 <h3 class="greyer-text my-3">Tell Us a bit More About you</h3>
                 </div>
-                <div class="about-user-info">
+                <form action="/">
+                  <div class="about-user-info">
                     <div class="row">
                       <div class="col-sm-6">
-                        <p class="required-field bolder-text text-align-left black-text">Are you pregnant?</p>
+                        <p class="my-2 required-field bolder-text text-align-left black-text">Are you pregnant?</p>
                     </div>
                     <div class="col-sm-6">
                         <!-- inline radio -->
+                       <div class="my-2">
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label bolder-text" for="inlineRadio1">Yes</label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label bolder-text" for="inlineRadio2">No</label>
-                          </div>
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          <label class="form-check-label bolder-text" for="inlineRadio1">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label bolder-text" for="inlineRadio2">No</label>
+                        </div>
+                       </div>
                     </div>
-                       <div class="find-due-date">
+                       <div class="find-due-date my-4">
                          <h3>What is your due date?</h3>
                          <div class="find-month">
                             <div class="month-label">
-                              <label for="months">Select Month</label> <br>
+                              <label class="m-label" for="months">Select Month</label> <br>
                               <select class="dropdown" name="month" id="months">
                                 <option value="">xxx</option>
                                 <option value="">January</option>
@@ -147,19 +150,13 @@
                             </div>
 
                             <div class="year-label">
-                              <p>Select Year</p>
-                              <div class="dropdown">
-                                <button class="btn btn-category btn-find-month dropdown-toggle" type="button" id="dropdownMenuButton" 
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                2000
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li  class="dropdown-item"> <a href="#"> 2001</a></li> 
-                                <li  class="dropdown-item">  <a  href="#">2002</a></li> 
-                                  <li  class="dropdown-item">  <a  href="#">2004</a></li> 
-                                    <li  class="dropdown-item">  <a  href="#">2005</a></li> 
-                                </ul>
-                              </div>
+                              <label class="m-label" for="months">Select Year</label> <br>
+                              <select class="dropdown" name="month" id="months">
+                                <option value="">2000</option>
+                                <option value="">2001</option>
+                                <option value="">2002</option>
+                                <option value="">2003</option>
+                              </select>
                             </div>
                             
                          </div>
@@ -167,23 +164,28 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-6">
+                          <div class="my-3">
                             <p class="required-field text-align-left bolder-text black-text">Are you planning a pregnancy?</p>
+
+                          </div>
                         </div>
                         <div class="col-sm-6">
                             <!-- inline radio -->
+                          <div class="my-3">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                <label class="form-check-label bolder-text" for="inlineRadio1">Yes</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                <label class="form-check-label bolder-text" for="inlineRadio2">No</label>
-                              </div>
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1">
+                              <label class="form-check-label bolder-text" for="inlineRadio3">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option2">
+                              <label class="form-check-label bolder-text" for="inlineRadio4">No</label>
+                            </div>
+                          </div>
                         </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-6">
-                        <p class="required-field bolder-text text-align-left black-text">Are you pregnant?</p>
+                        <p class="required-field bolder-text text-align-left black-text">Do you have kids?</p>
                     </div>
                     <div class="col-sm-6">
                         <!-- inline radio -->
@@ -196,50 +198,59 @@
                             <label class="form-check-label bolder-text" for="inlineRadio2">No</label>
                           </div>
                     </div>
-                       <div class="find-due-child">
+                       <div class="my-4 find-due-child">
                          <div class="add-child">
                            <span>CHILD 1</span>
                          </div>
                          <h3>What is their date of birth?</h3>
+                         <div class="all-child-labels d-flex align-items-center justify-content-between">
+                            <label class="m-label" for="months">Select Month</label>
+                            <label class="m-label" for="months">Select Year</label>
+                           
+                         </div>
                          <div class="find-child">
-                            <div class="month-label">
-                              <p>Select Month</p>
-                              <div class="dropdown mr-2">
-                                <button class="btn btn-find-month dropdown-toggle" type="button" id="dropdownMenuButton" 
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                   XXX
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li  class="dropdown-item"> <a href="#">January </a></li> 
-                                <li  class="dropdown-item"><a  href="#">February </a></li>  
-                                 <li  class="dropdown-item"><a  href="#">March</a> </li> 
-                                </ul>
-                              </div>
+                          <div class="month-label">
+                            <select class="dropdown" name="month" id="months">
+                              <option value="">xxx</option>
+                              <option value="">January</option>
+                              <option value="">February</option>
+                              <option value="">March</option>
+                            </select>
+                          </div>
 
-                            </div>
-
-                            <div class="year-label">
-                              <p>Select Year</p>
-                              <div class="dropdown">
-                                <button class="btn btn-category btn-find-month dropdown-toggle" type="button" id="dropdownMenuButton" 
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                2000
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li  class="dropdown-item"> <a href="#"> 2001</a></li> 
-                                <li  class="dropdown-item">  <a  href="#">2002</a></li> 
-                                  <li  class="dropdown-item">  <a  href="#">2004</a></li> 
-                                    <li  class="dropdown-item">  <a  href="#">2005</a></li> 
-                                </ul>
-                              </div>
-                            </div>
+                          <div class="year-label">
+                            <select class="dropdown" name="month" id="months">
+                              <option value="">2000</option>
+                              <option value="">2001</option>
+                              <option value="">2002</option>
+                              <option value="">2003</option>
+                            </select>
+                          </div>
+                          
+                         <button class="btn btn-another-child">Add Another Child</button>
                             
                             
                          </div>
-                         <button class="btn btn-another-child">Add Another Child</button>
                        </div>
                     </div>
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <div class="my-3">
+                          <p class=" required-field text-align-left bolder-text black-text">What's your postcode?</p>
+
+                        </div>
+                      </div>
+                      <div class="col-sm-7">
+                          <div class="form-group">
+                            <input type="text" class="my-2 form-control postcode-style" placeholder=""/>
+                          </div>
+                      </div>
+                  </div>
+                   <button class="btn btn-update">UPDATE <i class="fas fa-chevron-right icon-right"></i></button>
+                  
                 </div>
+                </form>
+
               </div>
           </div>
       </div>
