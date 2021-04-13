@@ -111,6 +111,14 @@ h5{
 	background-color: #26AEAC;
 }
 
+.text-green{
+	color: #26AEAC;
+}
+
+.bg-gray{
+	background: #F6F6F6 !important;
+}
+
 .text-dark, .text-dark p{
 	color: #000;
 }
@@ -140,6 +148,16 @@ a.color-grad:hover, .slide-card:hover .color-grad{
 	background: -webkit-linear-gradient(120deg, rgba(250,144,125,1) 0%, rgba(255,211,146,1) 100%);
 	background: linear-gradient(120deg, rgba(250,144,125,1) 0%, rgba(255,211,146,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fa907d",endColorstr="#ffd392",GradientType=1);
+}
+
+.disabled .color-grad{
+	pointer-events: none;
+	color: #fff !important;
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(128, 128, 128, 0.40) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(128, 128, 128, 0.40) 100%);
+	background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(128, 128, 128, 0.40) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#808080",GradientType=1);
 }
 
 .header{
@@ -867,18 +885,24 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 .search-result-bg{
 	padding: 2% 0;
 }
+.search-heading{
+	width: 100%;
+	max-width: 500px;
+	margin: auto;
+}
 .search-heading span{
-	font-size: 23px;
+	font-weight: 300;
+	font-size: 21px;
 	display: block;
-	width: 74%;
+	margin-bottom: 5px;
 }
 .text-white span{
 	color: #fff;
 }
 .heading-box{
 	border-bottom: 1px solid #fff;
-	display: inline;
-	width: 100%;
+	display: block;
+	margin-bottom: 0;
 }
 .searched-para{
 	color: #8C8C8C;
@@ -897,29 +921,65 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 	text-align: left;
 }
 .search-unit{
-    margin: 2% 3%;
+    margin: 45px 0 0;
 	border: 1px solid #D8D8D8;
-    padding: 4% 3%;
-	border-radius: 6px;
-
-
+    padding: 34px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+.search-unit h2{
+	font-weight: 500;
+	font-size: 34px;
+	margin-bottom: 0.5em !important;
 }
 .unit-icon{
+	margin-bottom: 12px;
 	font-style: italic;
-	font-size: 18px;
+	font-size: 16px;
+}
+.unit-icon i.fa-caret-right{
+	width: 21px;
+	height: 19px;
+	margin-right: 6px;
+	vertical-align: -2px;
+	display: inline-block;
+	background: #fff url('../images//dark-arrows.png') no-repeat center left / 19px 21px;
+}
+.unit-icon i.fa-caret-right:before{
+	display: none;
 }
 .pagination{
+	padding: 5px 10px;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid;
-    border-radius: 26px;
-
+	border: 1px solid #707070;
+    border-radius: 50px;
+	font-size: 16px;
+}
+.pagination li:first-child{
+	margin-right: 25px;
+}
+.pagination li:first-child a{
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.pagination li:last-child{
+	margin-left: 25px;
 }
 .search-pages{
 	border-radius: 15px;
-	width: 23%;
+	width: 100%;
     margin: 0 auto;
-
+    margin-top: 20px;
+    margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.search-pages .pagination{
+	margin: 0;
 }
 .page-box-item{
 	width: 26px;
@@ -1804,4 +1864,88 @@ margin: 0 auto;
 	padding: 13px 17px;
 	border: 1px solid #34AED5;
 	color: #34AED5;
+}
+.treatment-banner{
+	padding: 35px 0;
+	color: #fff;
+}
+.treatment-banner h1{
+	margin: 0;
+}
+
+.treatment-banner .btn{
+	line-height: 1;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+.treatment-banner .btn + .btn{
+	margin-left: 15px;
+}
+.treatment-banner .btn i{
+	margin-right: 10px;
+}
+.btn-white:hover{
+	color: #de5b43;
+}
+.btn-outline-white{
+	border: 1px solid #fff;
+	color: #fff;
+}
+.btn-outline-white:hover{
+	background-color: #de5b43;
+	border-color: #de5b43;
+	color: #fff;
+}
+
+.content-area p:last-child{
+	margin-bottom: 0;
+}
+
+.filter_by_location{
+	padding: 40px 0;
+}
+.filter_by_location strong{
+	white-space: nowrap;
+	margin-right: 18px;
+	font-weight: 500;
+	font-size: 18px;
+	color: #7A7A7A;
+}
+.filter_by_location .input-group{
+	max-width: 190px;
+}
+.filter_by_location select{
+	color: #000;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 8px;
+	border-left: 0;
+	padding-left: 0;
+}
+.filter_by_location .input-group-text{
+	border-radius: 8px;
+}
+
+.eczema-header{
+	font-size: 18px;
+}
+
+.review-panel{
+	border: 1px solid #D8D8D8;
+	background-color: #fff;
+	border-radius: 10px;
+	margin-bottom: 25px;
+	padding: 15px 25px;
+}
+.review-counter{
+	opacity: 0.25;
+	color: #8B8B8B;
+	line-height: 1;
+	font-size: 65px;
+	font-weight: 700;
+}
+.review-title{
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
 }
