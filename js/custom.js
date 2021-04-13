@@ -3,7 +3,7 @@ $(document).ready(function(){
   	$(this).slick({
       speed: 300,
       dots: false,
-      infinite: false,
+      infinite: true,
       slidesToShow: 4,
       centerMode: false,
       slidesToScroll: 2,
@@ -44,5 +44,19 @@ $(document).ready(function(){
       scrollTop: $pos + 'px'
     }, 1);
   });
+
+  
+      let max_fields = 10;
+      let wrapper = $(".find_due_child");
+      let add_button = $(".btn-another-child");
+      let x = 1;
+      $(add_button).click(
+        function(){
+          if(x < max_fields){
+            x++;
+            $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+          }
+        }
+      )
 
 });
