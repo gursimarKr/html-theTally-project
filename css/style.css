@@ -2451,3 +2451,37 @@ margin: 0 auto;
 .content-area p{
 	color: #272727;
 }
+
+textarea.form-control{
+	height: auto !important;
+}
+
+.contact-outer{
+	position: absolute;
+	right: 0;
+	top: 120px;
+	width: 35%;
+	padding-bottom: 1.8%;
+	overflow: hidden;
+}
+.contact-outer-image{
+	right: -60px;
+	position: relative;
+}
+.contact-outer-shape{
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: -19px;
+    margin: auto;
+
+}
+.size-1x{
+	font-size: 16px;
+}
+.contact-message p{
+	max-width: 75%;
+	font-size: 20px;
+	font-weight: 400;
+	color: #272727;
+}
