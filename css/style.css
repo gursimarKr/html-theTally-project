@@ -1739,9 +1739,12 @@ margin: 0 auto;
 }
 .fill-background{
 	background-color: #34AED5;
-	color: #fff;
+	color: #fff !important;
 	border-radius: 30px;
     padding: 12px 35px;
+}
+.fill-background:hover{
+	background-color: #26AEAC;
 }
 .update-profile-links a{
 	font-size: 16px;
@@ -2443,4 +2446,8 @@ margin: 0 auto;
 	color: #272727;
 	font-size: 14px;
 	font-style: italic;
+}
+
+.content-area p{
+	color: #272727;
 }
