@@ -99,9 +99,9 @@
 
  <main class="page-content">
     <div class="profile-content">
-        <div class="my-profile-bg" style="background-image: url('./images/my-profile-bg.png');">
+        <div class="my-profile-bg blue-grad">
             <div class="profile-heading">
-                <h2>Welcome Kate</h2>
+                <h1>Welcome Kate</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             </div>
             <!-- <img src="./images/shape.png" alt="pan" class="login-side-polygon"> -->
@@ -112,12 +112,24 @@
             <div class="container">
                 <h2>My Interests</h2>
             <div class="plan-one">
-                <p class="border-plan">Planning a pregnancy</p>
+                <div class="input-pill d-inline-block mb-3 me-2">
+                  <input type="checkbox" hidden id="planning_pregnancy" />
+                  <label class="border-plan" for="planning_pregnancy">Planning a pregnancy</label>
+                </div>
             </div>
             <div class="plan-two">
-                <p class="border-plan">Newborn & Babies</p>
-                <p class="border-plan mx-2">Toddlers and pre-school</p>
-                <p class="border-plan mx-2">Primary School</p>
+                <div class="input-pill d-inline-block mb-3 me-2">
+                  <input type="checkbox" hidden id="newborn_prebabies" />
+                  <label class="border-plan" for="newborn_prebabies">Newborn & Babies</label>
+                </div>
+                <div class="input-pill d-inline-block mb-3 me-2">
+                  <input type="checkbox" hidden id="toddles_pre" />
+                  <label class="border-plan" for="toddles_pre">Toddlers and pre-school</label>
+                </div>
+                <div class="input-pill d-inline-block mb-3 me-2">
+                  <input type="checkbox" hidden id="primary_school" />
+                  <label class="border-plan" for="primary_school">Primary School</label>
+                </div>
             </div>
             <div class="update-profile-links my-4">
                 <a href="./profile-interest.html" class="fill-background "><i class="fas fa-user mr-2"></i> Update My Profile</a>

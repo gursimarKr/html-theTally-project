@@ -160,6 +160,14 @@ a.color-grad:hover, .slide-card:hover .color-grad{
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#808080",GradientType=1);
 }
 
+.blue-grad{
+	background: rgb(52,174,213);
+	background: -moz-linear-gradient(90deg, rgba(52,174,213,1) 0%, rgba(38,174,172,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(52,174,213,1) 0%, rgba(38,174,172,1) 100%);
+	background: linear-gradient(90deg, rgba(52,174,213,1) 0%, rgba(38,174,172,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#34aed5",endColorstr="#26aeac",GradientType=1);
+}
+
 .header{
 	top: 0;
 	left: 0;
@@ -1394,7 +1402,10 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 .login-form label{
 	margin: 0;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 16px;
+}
+.login-form label sup{
+	color: #EE4332;
 }
 .form-content .btn-send-message{
 	background-color: #26AEAC;
@@ -1429,8 +1440,9 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 	background-color: #F1F1F1;
     border-radius: 8px;
     border-width: 0;
-    padding: 2% 1%;
-    font-size: 18px;
+    padding: 8px 15px;
+    font-size: 16px;
+    height: 45px;
 }
 .form-content .icon-right, .login-form .icon-right, .register-form-box .icon-right{
 	margin: 0px 1%;
@@ -1483,7 +1495,12 @@ ul.category_menu > li:nth-last-child(-n+2) .subcategory_menu{
 	color: white;
 	text-transform: uppercase;
 	font-weight: 500;
-	padding: 3% 0;
+	padding: 18px 0 15px;
+	line-height: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1506,10 +1523,15 @@ margin: 0 auto;
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
 }
-.login-heading-content p{
-	width: 75%;
-	color:#fff;
+.login-heading-content{
+	width: 100%;
 	margin: 0 auto;
+	max-width: 460px;
+}
+.login-heading-content p{
+	color:#fff;
+	font-size: 16px;
+	margin: 20px auto 0;
 }
 .login-form .form-group{
 	margin: 14px 0;
@@ -1683,14 +1705,21 @@ margin: 0 auto;
 .profile-heading{
 	margin: 0 auto;
 	width: 100%;
+	max-width: 480px;
 	text-align: center;
 	color: #fff;
-	padding: 3% 0;
+	padding: 3% 15px;
+}
+.profile-heading h1{
+	margin-bottom: 0.3em;
 }
 .profile-heading p{
 	color: #fff;
-	width: 35%;
+	width: 0;
+	font-weight: 400;
 	margin: 0 auto;
+	max-width: 460px;
+	width: 100%;
 }
 .my-interest h2{
 	text-transform: uppercase;
@@ -1700,7 +1729,13 @@ margin: 0 auto;
 	display: inline-block;
     padding: 8px 20px;
 	border-radius: 5px;
+	font-size: 16px;
 	color: #000;
+}
+.input-pill input:checked + .border-plan{
+	background-color: #34AED5;
+	border-color: #34AED5;
+	color: #fff;
 }
 .fill-background{
 	background-color: #34AED5;
@@ -2276,7 +2311,7 @@ margin: 0 auto;
 	margin: 0;
 	color: inherit;
 }	
-.bottom-help a{
+.bottom-help a, .reset-password-message a{
 	color: #26AEAC;
 	font-weight: bold;
 	text-decoration: underline !important;
@@ -2286,4 +2321,45 @@ margin: 0 auto;
 	max-width: 150px;
 	bottom: 85%;
 	left: -80px;
+}
+
+.accordion-item{
+	border-radius: 10px;
+	margin-bottom: 20px;		
+	border: 1px solid #D8D8D8;
+}
+.accordion-button{
+	color: #000;
+	border: none;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 22px 25px;
+	border-radius: 10px 10px 0 0 !important;
+}
+.accordion-button:not(.collapsed){
+	color: #000;
+	background-color: #F2F2F2;	
+}
+.accordion-button:not(.collapsed)::after{
+	background-image: url('../images/x.svg');
+    background-position: center;
+    -webkit-background-size: 25px;
+    background-size: 25px;
+}
+.accordion-body{
+	background-color: #F2F2F2;
+	padding: 0 25px 22px;
+	color: #585858;
+	border: none;
+}
+.reset-password-icon{
+	display: block;
+	height: 60px;
+	width: 60px;
+	margin: 0 auto 35px;
+}
+
+.reset-password-message p{
+	color: #272727;
+	font-size: 16px;
 }
