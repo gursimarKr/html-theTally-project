@@ -2226,6 +2226,7 @@ margin: 0 auto;
 }
 .review-panel-show .btn{
 	font-size: 14px;
+	font-weight: 500;
 }
 .review-panel-show .btn:hover{
 	color: #ec6851;
@@ -2316,9 +2317,27 @@ margin: 0 auto;
 /* terms and conditions */
 .terms-container{
 	border: 1px solid #D5D5D5;
+	border-radius: 10px;
 	padding: 39px 49px;
-	width: 1024px;
 	margin: 0 auto;
+	max-width: 1024px;
+	width: 100%;
+}
+.terms-container :last-child{
+	margin-bottom: 0;
+}
+.terms-container p{
+	margin-bottom: 25px;
+}
+.terms-container ul{
+	font-size: 17px;
+	margin-top: -10px;
+	list-style-type: none;
+}
+.terms-container ul li{
+	margin-bottom: 8px;
+	padding-left: 16px;
+	background: transparent url('../images/list-arrow.svg') no-repeat top 7px left / 8px;
 }
 .terms-and-conditions{
 	margin: 65px 0;
