@@ -112,4 +112,8 @@ $(document).ready(function(){
   });
   })
 
+  $('.profile_detail .form-check-input').change(function(){
+    console.log($(this).val());
+  })
+
 });

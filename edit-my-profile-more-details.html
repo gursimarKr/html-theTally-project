@@ -102,7 +102,7 @@
     <div class="register-content">
        <div class="login-background blue-grad">
           <div class="login-heading-content">
-              <h1>Your Profile Settings</h1>
+              <h1>Profile Interests</h1>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
           </div>
           <img class="login-side-polygon" src="./images/shape.png" alt="pan"/>
@@ -110,45 +110,192 @@
       
        
        </div>
-    
-       <div class="register-form-box login-form my-5">
-           
-           <div class="container pb-2">
-               <form>
-                   <!-- name -->
-                   <div class="row">
-                       <div class="col-sm-6 form-group">
-                           <label for="profile-first-name">First Name <sup>*</sup></label>
-                           <input type="text" class="form-control" id="profile-first-name" placeholder="Kate">
-                       </div>
-                       <div class="col-sm-6 form-group">
-                        <label for="profile-last-name">Last Name <sup>*</sup></label>
-                        <input type="text" class="form-control" id="profile-last-name" placeholder="Debenham">
-                    </div>
-                   </div>
-                   <!-- email -->
-                   <div class="row">
-                       <div class="form-group">
-                           <label for="profile-email">Email Address <sup>*</sup></label>
-                           <input type="email" class="form-control" placeholder="nicola@alkye.com">
-                         </div>
-                   </div>
-                  
-                 <div class="row">
-                   <div class="form-group">
-                       <label for="profile-phone-number">Phone Number <sup>*</sup></label>
-                       <input type="text" class="form-control form-control-style" placeholder="+61-452401465">
-                    </div>
-                 </div>
-               
-                   <button type="submit" class="btn btn-submit">Update <i class="fas fa-chevron-right icon-right"></i></button>
-                 </form>
-           </div>
-       </div>
-       <img src="./images/contact-us-poly.png" alt="pan" class="profile-settings-polygon">
-
-
     </div>
+
+    <div class="py-60">
+      <div class="container container-mini">
+          <div class="profile_title text-center mb-md-5 mb-4">
+            <h3>Tell Us a bit More About you</h3>
+          </div>
+          <!-- /.profile_title -->
+          
+          <div class="profile_detail">
+            <form action="/">
+              <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                  <h4>Are you pregnant? <sup>*</sup></h4>
+                </div>
+                <!-- /.col-md-6 -->
+                <div class="col-md-6">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="pregnant" id="pregnant1" value="pregnant">
+                    <label class="form-check-label" for="pregnant1">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="pregnant" id="pregnant2" value="">
+                    <label class="form-check-label" for="pregnant2">No</label>
+                  </div>
+                </div>
+                <!-- /.col-md-6 -->
+
+                <div class="col-md-12">
+                  <div class="profile_detail_box" id="pregnant">
+                    <h4 class="mb-3">What is your due date?</h4>
+
+                    <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                        <label class="form-label">Select Month</label>
+                        <select class="form-select">
+                          <option selected>xxx</option>
+                          <option value="1">xxx</option>
+                          <option value="2">xxx</option>
+                          <option value="3">xxx</option>
+                        </select>
+                      </div>
+                      <!-- /.col-sm-6 col-md-4 -->
+                      <div class="col-sm-6 col-md-4">
+                        <label class="form-label">Select Year</label>
+                        <select class="form-select">
+                          <option selected>2000</option>
+                          <option value="1">2001</option>
+                          <option value="2">2002</option>
+                          <option value="3">2003</option>
+                        </select>
+                      </div>
+                      <!-- /.col-sm-6 col-md-4 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.profile_detail_box -->
+                </div>
+                <!-- /.col-md-12 -->
+              </div>
+              <!-- /.row -->
+              <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                  <h4>Are you planning a pregnancy? <sup>*</sup></h4>
+                </div>
+                <!-- /.col-md-6 -->
+                <div class="col-md-6">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="planPregnancy" id="planPregnancy1" value="option1">
+                    <label class="form-check-label" for="planPregnancy1">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="planPregnancy" id="planPregnancy2" value="option2">
+                    <label class="form-check-label" for="planPregnancy2">No</label>
+                  </div>
+                </div>
+                <!-- /.col-md-6 -->
+              </div>
+              <!-- /.row -->
+              <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                  <h4>Do you have kids? <sup>*</sup></h4>
+                </div>
+                <!-- /.col-md-6 -->
+                <div class="col-md-6">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="kids" id="kids1" value="kids">
+                    <label class="form-check-label" for="kids1">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="kids" id="kids2" value="">
+                    <label class="form-check-label" for="kids2">No</label>
+                  </div>
+                </div>
+                <!-- /.col-md-6 -->
+
+                <div class="col-md-12">
+                  <div class="profile_detail_box" id="kids">
+                    <div class="mb-4 profile_detail_subheading border-bottom pb-2 text-uppercase">
+                      Child 1
+                    </div>
+                    <h4 class="mb-3">What is their date of birth?</h4>
+
+                    <div class="row align-items-end">
+                      <div class="col-sm-6 col-md-4">
+                        <label class="form-label">Select Month</label>
+                        <select class="form-select">
+                          <option selected>xxx</option>
+                          <option value="1">xxx</option>
+                          <option value="2">xxx</option>
+                          <option value="3">xxx</option>
+                        </select>
+                      </div>
+                      <!-- /.col-sm-6 col-md-4 -->
+                      <div class="col-sm-6 col-md-4">
+                        <label class="form-label">Select Year</label>
+                        <select class="form-select">
+                          <option selected>2000</option>
+                          <option value="1">2001</option>
+                          <option value="2">2002</option>
+                          <option value="3">2003</option>
+                        </select>
+                      </div>
+                      <!-- /.col-sm-6 col-md-4 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.profile_detail_box -->
+                  <div class="profile_detail_box">
+                    <div class="mb-4 profile_detail_subheading border-bottom pb-2 text-uppercase">
+                      Child 2
+                    </div>
+                    <h4 class="mb-3">What is their date of birth?</h4>
+
+                    <div class="row align-items-end">
+                      <div class="col-sm-6 col-md-4">
+                        <label class="form-label">Select Month</label>
+                        <select class="form-select">
+                          <option selected>xxx</option>
+                          <option value="1">xxx</option>
+                          <option value="2">xxx</option>
+                          <option value="3">xxx</option>
+                        </select>
+                      </div>
+                      <!-- /.col-sm-6 col-md-4 -->
+                      <div class="col-sm-6 col-md-4">
+                        <label class="form-label">Select Year</label>
+                        <select class="form-select">
+                          <option selected>2000</option>
+                          <option value="1">2001</option>
+                          <option value="2">2002</option>
+                          <option value="3">2003</option>
+                        </select>
+                      </div>
+                      <!-- /.col-sm-6 col-md-4 -->
+                      <div class="col-sm-6 col-md-4">
+                        <button class="btn w-100 btn-outline-blue">Add Another Child</button>
+                      </div>
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.profile_detail_box -->
+                </div>
+                <!-- /.col-md-12 -->
+              </div>
+              <!-- /.row -->
+              <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                  <h4>What's your postcode? <sup>*</sup></h4>
+                </div>
+                <!-- /.col-md-6 -->
+                <div class="col-md-6">
+                  <input type="text" class="form-control" />
+                </div>
+                <!-- /.col-md-6 -->
+              </div>
+              <!-- /.row -->
+
+              <button type="button" data-bs-toggle="modal"  data-bs-dismiss="modal" data-bs-target="#profileThanksModal" class="btn w-auto px-5 mb-0 btn-submit">Update <i class="fas fa-chevron-right ms-3 icon-right"></i></button>
+            </form>
+          </div>
+          <!-- /.profile_detail -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.py-60 -->
   
     <div class="section-search position-relative mt-2" id="search">
        <img src="images/shape-rect.svg" class="shape-bottom-left" alt="shape" />
@@ -174,6 +321,29 @@
      <!-- /.section-search -->
    
 </main>
+
+ 
+  <div class="modal fade" id="profileThanksModal" tabindex="-1" aria-labelledby="profileThanksModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-container modal-thanks text-center">
+                  <img src="images/thank-thumb.svg" alt="icon" />
+                  <h4>Thankyou for your time!!</h4>
+                  <p>Thankyou for sharing all the others information. <br />Information submitted successfully</p>
+                  
+                  <div class="mb-4 pt-3">
+                    <a class="text-uppercase" href="#">View Your Profile</a>
+                  </div>
+                </div>
+                <!-- /.modal-container -->
+            </div>
+          </div>
+        </div>
+      </div>
 
 
   <footer class="footer bg-white">
