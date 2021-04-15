@@ -723,7 +723,7 @@ a.color-grad:hover, .slide-card:hover .color-grad{
 	border-width: 0 0 1px 0;
 	border-color: #fff;
 	border-radius: 0;
-	font-weight: 300;
+	font-weight: 500;
 	font-size: 22px;
 	height: 50px;
 	color: #fff;
@@ -1698,7 +1698,7 @@ margin: 0 auto;
 	color: white;
 	text-transform: uppercase;
 	font-weight: 500;
-	padding: 10px 0;
+	padding: 12px 0 10px;
     font-size: 16px;
 	display: flex;
 	align-items: center;
