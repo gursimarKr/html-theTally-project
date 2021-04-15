@@ -100,4 +100,16 @@ $(document).ready(function(){
     $(this).parents('.review-panel').siblings().removeClass('show');
   });
 
+
+  var myModalEl = document.getElementById('reviewModal')
+  myModalEl.addEventListener('shown.bs.modal', function (event) {
+    $('#textarea').on('keyup', function(event) {
+     var len = $(this).val().length;
+     var charVal = 500 - len;
+     if (len <= 500) {
+        $("#charNum").html(charVal);
+     }
+  });
+  })
+
 });

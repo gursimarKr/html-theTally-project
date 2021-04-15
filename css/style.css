@@ -2577,7 +2577,7 @@ textarea.form-control{
 }
 .modal-container h3{
 	color: #585858;
-	font-size: 20px;
+	font-size: 18px;
 }
 .btn-thumb img{
 	margin: auto;
@@ -2614,4 +2614,7 @@ input:checked + .btn-thumb img{
 }
 .modal-thanks p{
 	color: #272727;
+}
+.modal .bottom-help{
+	padding: 28px 10px;
 }
