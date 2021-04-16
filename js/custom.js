@@ -104,7 +104,7 @@ $(document).ready(function(){
   $('.profile_detail input[type="radio"]').click(function() {
     var inputValue = $(this).attr("value");
     var targetBox = $("." + inputValue);
-    // $(".profile_detail_box").not(targetBox).hide();
+    $(this).parents('.row').find(".profile_detail_box").not(targetBox).hide();
     $(targetBox).show();
   });
 
