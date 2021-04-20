@@ -2697,3 +2697,6 @@ input:checked + .btn-thumb img{
 	font-size: 15px;
 	font-weight: 500;
 }
+.disclaimer p{
+	font-size: 14px;
+}
